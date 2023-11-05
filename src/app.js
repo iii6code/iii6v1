@@ -773,10 +773,13 @@ const getDataInRange = async (fromDate, toDate) => {
 };
 
 const getAccuWeather = async () => {
-  const response = await fetch("https://dataservice.accuweather.com/forecasts/v1/daily/1day/1?apikey=hNGMkdtqDKpawDLBedDDBqMPEXuxhyFz");
+  const response = await fetch("https://dataservice.accuweather.com/forecasts/v1/daily/1day/274087?apikey=hNGMkdtqDKpawDLBedDDBqMPEXuxhyFz");
   const movies = await response.json();
   const data = document.getElementById("data");
-  data.innerHTML = JSON.stringify(movies);
+  data.innerHTML = "Location :: Lisbon, Portugal<br/>";
+  data.innerHTML += "Date :: " + JSON.stringify(movies.DailyForecasts[0].Date) + "<br/>";
+  data.innerHTML += "Min :: " + JSON.stringify(movies.DailyForecasts[0].Temperature.Minimum.Value) + "°F <br/> Max :: " + JSON.stringify(movies.DailyForecasts[0].Temperature.Maximum.Value) + "°F<br/>";
+  data.innerHTML += "Intens :: " + JSON.stringify(movies.DailyForecasts[0].Day.PrecipitationType) + " / " + JSON.stringify(movies.DailyForecasts[0].Day.PrecipitationIntensity);
   console.log(movies);
 };
 const getData = (e) => {
