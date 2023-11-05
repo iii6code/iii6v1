@@ -775,6 +775,8 @@ const getDataInRange = async (fromDate, toDate) => {
 const getAccuWeather = async () => {
   const response = await fetch("https://dataservice.accuweather.com/forecasts/v1/daily/1day/1?apikey=hNGMkdtqDKpawDLBedDDBqMPEXuxhyFz");
   const movies = await response.json();
+  const data = document.getElementById("data");
+  data.innerHTML = JSON.stringify(movies);
   console.log(movies);
 };
 const getData = (e) => {
