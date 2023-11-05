@@ -1,8 +1,8 @@
 import "../public/app.scss";
-import ethers from "ethers";
+import { ethers } from "ethers";
 
 const getDataInRange = async (fromDate, toDate) => {
-  const provider = new ethers.JsonRpcProvider("https://api.calibration.node.glif.io/rpc/v1");
+  const provider = new ethers.getDefaultProvider("https://api.calibration.node.glif.io/rpc/v1");
   const contractInstance = new ethers.Contract("0xd0ee658f1203302e35B9B9E3A73CB3472A2C2373", abi, provider);
   const allPubs = await contractInstance.pubsOfOwner("0x64251043A35ab5D11f04111B8BdF7C03BE9cF0e7");
   const filtered = allPubs.filter((pub) => {
