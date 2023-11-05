@@ -17,10 +17,27 @@
     <link rel="icon" type="image/png" href="/images/foggy.png" />
   </head>
   <body class="framer-body-augiA20Il">
-    <script async="" src="https://events.framer.com/script" data-fid="84d8e92931753d6db6b6802fff37056035a79834d307606a33b79c883be183e6"></script>
-
-    <!-- End of bodyStart -->
-    <div id="main" data-framer-hydrate-v2='{"routeId":"augiA20Il","localizationId":"default","localeId":"default"}' data-framer-ssr-released-at="2023-10-26T13:43:38.762Z" data-framer-page-optimized-at="2023-11-04T21:06:26.896Z">
+    <div id="bg"><img id="bgpic" src="https://framerusercontent.com/images/nB8uruHoORwYsEhC4TTpdeKdn3k.png" /></div>
+    <div id="main">
+      <div id="nav">
+        <img id="logo" src="https://framerusercontent.com/images/7GzRWjP7Z6fqs6h8qTgaE4cUHJc.png?scale-down-to=512" />
+        <div id="about" class="link">About Us</div>
+        <div id="team" class="link">Our Team</div>
+        <div id="map" class="link">Weather Map</div>
+        <div id="oracles" class="link">Oracles</div>
+        <div id="contact" class="link">Contact Us</div>
+      </div>
+    </div>
+    <div id="head">
+      <div id="info">
+        <h1>Predict the storm with Foggy Oracles.</h1>
+        <h3>We bring real world weather data to blockchain</h3>
+        <button id="Weather Map">Weather Map</button><button id="oracle_btn">Oracle</button>
+      </div>
+      <div id="clouds"></div>
+    </div>
+    <!-- End of bodyStart 
+    <div id="main" data-framer-hydrate-v2='{"routeId":"augiA20Il","localizationId":"default","localeId":"default"}'>
       <div class="framer-DhBn6 framer-9vvUk framer-KBiPr framer-n8skC" style="display: contents">
         <div class="framer-72rtr7" style="min-height: 100vh; width: auto">
           <div class="framer-wrmq3j" data-framer-name="Banner" name="Banner">
@@ -46,7 +63,10 @@
                       <div class="framer-192zxvl" style="outline: none; display: flex; flex-direction: column; justify-content: flex-start; flex-shrink: 0; --extracted-r6o4lv: rgb(255, 255, 255); --framer-paragraph-spacing: 0px; transform: none; opacity: 1" data-framer-component-type="RichTextContainer">
                         <p style="--font-selector: R0Y7T3V0Zml0LXJlZ3VsYXI=; --framer-font-family: 'Outfit', 'Outfit Placeholder', sans-serif; --framer-font-size: 18px; --framer-line-height: 1.6em; --framer-text-alignment: left; --framer-text-color: var(--extracted-r6o4lv, rgb(255, 255, 255))" class="framer-text"><a class="framer-text framer-styles-preset-mtk5ek" data-styles-preset="yji9opUjN" href="https://explorer.weatherxm.com/stats" target="_blank" rel="noopener">Weather Map</a></p>
                       </div>
-                      <div class="framer-15fui62" style="outline: none; display: flex; flex-direction: column; justify-content: flex-start; flex-shrink: 0; --extracted-r6o4lv: rgb(255, 255, 255); --framer-paragraph-spacing: 0px; transform: none; opacity: 1" data-framer-component-type="RichTextContainer"><p style="--font-selector: R0Y7T3V0Zml0LXJlZ3VsYXI=; --framer-font-family: 'Outfit', 'Outfit Placeholder', sans-serif; --framer-font-size: 18px; --framer-line-height: 1.6em; --framer-text-alignment: left; --framer-text-color: var(--extracted-r6o4lv, rgb(255, 255, 255))" class="framer-text">Oracles</p></div>
+                      <div class="framer-15fui62" style="outline: none; display: flex; flex-direction: column; justify-content: flex-start; flex-shrink: 0; --extracted-r6o4lv: rgb(255, 255, 255); --framer-paragraph-spacing: 0px; transform: none; opacity: 1" data-framer-component-type="RichTextContainer">
+                        <p style="--font-selector: R0Y7T3V0Zml0LXJlZ3VsYXI=; --framer-font-family: 'Outfit', 'Outfit Placeholder', sans-serif; --framer-font-size: 18px; --framer-line-height: 1.6em; --framer-text-alignment: left; --framer-text-color: var(--extracted-r6o4lv, rgb(255, 255, 255))" class="framer-text">Oracles</p>
+                      </div>
+                      <button id="oracle_btn">Oracles</button>
                     </div>
                     <div class="framer-w8l8jo" style="opacity: 1"></div>
                     <a class="framer-ade1u5 framer-u7bqgh" data-framer-name="Header Button" style="background-color: var(--token-e8dc42fd-fdba-4ae3-b5ee-1d25f6ddbf17, rgb(254, 146, 37)); opacity: 1; border-radius: 8px" href="./#contact-section"
@@ -131,12 +151,12 @@
                   <div class="framer-14v6mot" style="outline: none; display: flex; flex-direction: column; justify-content: flex-start; flex-shrink: 0; opacity: 1; transform: perspective(1200px)" data-framer-component-type="RichTextContainer">
                     <p class="framer-text framer-styles-preset-14y2rv1" data-styles-preset="y6TSlHP_9">
                       Smart contracts are not aware of what happens outside the borders of a blockchain. Foggy Oracles bridges the gap and allows
-                      <!-- --><strong class="framer-text">on-chain protocols</strong> to react and make decisions to
-                      <!-- --><strong class="framer-text">weather-related events.</strong>
+                      <strong class="framer-text">on-chain protocols</strong> to react and make decisions to
+                      <strong class="framer-text">weather-related events.</strong>
                     </p>
                     <p class="framer-text framer-styles-preset-14y2rv1" data-styles-preset="y6TSlHP_9">
                       Using real-world data from WeatherXM's expansive network of weather stations, we created
-                      <!-- --><strong class="framer-text">decentralized and verifiable weather oracles</strong> you can trust.<!-- -->
+                      <strong class="framer-text">decentralized and verifiable weather oracles</strong> you can trust.
                     </p>
                   </div>
                 </div>
@@ -160,8 +180,8 @@
             <div class="framer-92mkac" style="outline: none; display: flex; flex-direction: column; justify-content: flex-start; flex-shrink: 0; opacity: 1; transform: perspective(1200px)" data-framer-component-type="RichTextContainer">
               <p class="framer-text framer-styles-preset-14y2rv1" data-styles-preset="y6TSlHP_9" style="--framer-text-alignment: center">
                 <a class="framer-text" href="https://weatherxm.com/" target="_blank" rel="noopener">WeatherXM</a> is a
-                <!-- --><strong class="framer-text">community-powered Web3 weather station network</strong>. Search the map to discover stations deployed all over the world and view
-                <!-- --><strong class="framer-text">real-time weather conditions</strong>.<!-- -->
+               <strong class="framer-text">community-powered Web3 weather station network</strong>. Search the map to discover stations deployed all over the world and view
+                <strong class="framer-text">real-time weather conditions</strong>.
               </p>
             </div>
             <div class="framer-1tl0klc" data-framer-name="Banner button wrap" name="Banner button wrap">
@@ -304,11 +324,13 @@
                             <div class="framer-1x16dym" style="outline: none; display: flex; flex-direction: column; justify-content: flex-start; flex-shrink: 0; --extracted-r6o4lv: rgb(255, 255, 255); --framer-paragraph-spacing: 0px; transform: none; opacity: 1" data-framer-component-type="RichTextContainer">
                               <p style="--font-selector: R0Y7T3V0Zml0LXJlZ3VsYXI=; --framer-font-family: 'Outfit', 'Outfit Placeholder', sans-serif; --framer-font-size: 18px; --framer-letter-spacing: 0px; --framer-text-color: var(--extracted-r6o4lv, rgb(255, 255, 255))" class="framer-text">
                                 The Role of Foggy Oracles in Weather-Proofing
-                                <!-- --><br class="framer-text" />Smart Contracts<!-- -->
+                               <br class="framer-text" />Smart Contracts
                               </p>
                             </div>
                             <div class="framer-afwelm" style="outline: none; display: flex; flex-direction: column; justify-content: flex-start; flex-shrink: 0; --extracted-r6o4lv: rgb(255, 255, 255); --framer-paragraph-spacing: 0px; transform: none; opacity: 1" data-framer-component-type="RichTextContainer">
-                              <p style="--font-selector: R0Y7T3V0Zml0LXJlZ3VsYXI=; --framer-font-family: 'Outfit', 'Outfit Placeholder', sans-serif; --framer-font-size: 18px; --framer-letter-spacing: 0px; --framer-text-color: var(--extracted-r6o4lv, rgb(255, 255, 255))" class="framer-text">Decentralized Weather: How Foggy Oracles is<!-- --><br class="framer-text" />Shaping the Future<!-- --></p>
+                              <p style="--font-selector: R0Y7T3V0Zml0LXJlZ3VsYXI=; --framer-font-family: 'Outfit', 'Outfit Placeholder', sans-serif; --framer-font-size: 18px; --framer-letter-spacing: 0px; --framer-text-color: var(--extracted-r6o4lv, rgb(255, 255, 255))" class="framer-text">Decentralized Weather: How Foggy Oracles is
+                         <br class="framer-text" />Shaping the Future
+                        </p>
                             </div>
                           </div>
                         </div>
