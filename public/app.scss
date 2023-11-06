@@ -25,15 +25,30 @@
   text-align: center;
   color: white;
 }
+button {
+  background: cornflowerblue;
+  color: white;
+  padding: 0.5em;
+  font-size: 2em;
+  margin-right: 1em;
+  border: 0;
+  border-radius: 9px;
+}
+button:hover {
+  background: white;
+  color: cornflowerblue;
+}
 #head {
   position: absolute;
   top: 20%;
   left: 2em;
   color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 #data {
   position: absolute;
-  top: 45%;
+  top: 51%;
   left: 2em;
   color: white;
   width: 600px;
