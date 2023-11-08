@@ -49,6 +49,20 @@ module.exports = {
       timeoutBlocks: 900,
       skipDryRun: true,
     },
+    aurora: {
+      provider: () => new HDWalletProvider(mnemonic, "https://mainnet.aurora.dev"),
+      network_id: 1313161554,
+      confirmations: 10,
+      timeoutBlocks: 900,
+      skipDryRun: true,
+    },
+    taurora: {
+      provider: () => new HDWalletProvider(mnemonic, "https://testnet.aurora.dev"),
+      network_id: 1313161555,
+      confirmations: 10,
+      timeoutBlocks: 900,
+      skipDryRun: true,
+    },
     arbitrum: {
       provider: () => new HDWalletProvider(mnemonic, "https://arbitrum.infura.io/v3/" + process.env.INF_API),
       network_id: 200,

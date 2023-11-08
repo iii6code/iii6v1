@@ -12,6 +12,8 @@
     "migrate:fevmt": "npx truffle migrate --network fevmt",
     "migrate:mumbai": "npx truffle migrate --network mumbai",
     "migrate:polygon": "npx truffle migrate --network polygon",
+    "migrate:aurora": "npx truffle migrate --network aurora",
+    "migrate:taurora": "npx truffle migrate --network taurora",
     "migrate:main": "npx truffle migrate --network main",
     "migrate:rinkeby": "npx truffle migrate --network rinkeby",
     "migrate:goerli": "npx truffle migrate --network goerli"

@@ -20,7 +20,7 @@ module.exports = {
   },
   devtool: "inline-source-map",
   devServer: {
-    watchFiles: path.resolve(__dirname, "build"),
+    watchFiles: path.resolve(__dirname, "dist"),
     compress: true,
     client: {
       reconnect: true,
@@ -31,5 +31,5 @@ module.exports = {
     hot: true,
     liveReload: true,
   },
-  plugins: [new HtmlWebpackPlugin({ title: "Carbon Market Exchnge", file: "index.html", template: "public/app.html" }), new CopyWebpackPlugin({ patterns: [{ from: "public/images", to: "images" }] }), new CopyWebpackPlugin({ patterns: [{ from: "public/json", to: "json" }] })],
+  plugins: [new HtmlWebpackPlugin({ title: "DIAS Code Tester", file: "index.html", template: "public/app.html" }), new CopyWebpackPlugin({ patterns: [{ from: "public/images", to: "images" }] }), new CopyWebpackPlugin({ patterns: [{ from: "public/json", to: "json" }] })],
 };
