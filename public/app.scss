@@ -27,6 +27,7 @@ body {
   left: 0;
   z-index: 0;
   overflow: hidden;
+  background: black;
 }
 #nav {
   position: absolute;
@@ -41,7 +42,7 @@ body {
   grid-gap: 1em;
   z-index: 1000;
   font-weight: 100;
-  box-shadow: 0.05em 0.05em 0.2em mediumaquamarine;
+  box-shadow: 0.05em 0.05em 0.2em tomato;
 }
 .line {
   background: black;
@@ -106,7 +107,7 @@ body {
   padding: 0;
   margin: 0;
   overflow-y: scroll;
-  background: none;
+  background: black;
   scroll-behavior: smooth;
 }
 .link {
@@ -120,11 +121,11 @@ body {
   color: black;
   text-decoration: none;
   text-align: center;
-  box-shadow: 0.05em 0.05em 0.1em mediumaquamarine;
+  box-shadow: 0.05em 0.05em 0.1em tomato;
 }
 .link:hover,
 .slink:hover {
-  background: mediumaquamarine;
+  background: tomato;
   color: white;
 }
 
@@ -194,7 +195,7 @@ body {
   height: 90%;
   padding: 2em;
   margin-top: 5%;
-  color: black;
+  color: rgb(0, 0, 0);
   overflow: hidden;
   scroll-behavior: smooth;
 }
@@ -227,7 +228,7 @@ body {
   border-radius: 1px;
   border: 1px solid black;
 
-  box-shadow: 0.05em 0.05em 0.1em mediumaquamarine;
+  box-shadow: 0.05em 0.05em 0.1em tomato;
 }
 #mod_title {
   text-align: center;
@@ -400,6 +401,7 @@ option {
 #salebox {
   border-radius: 1px;
   border: 1px solid black;
+  background: lightgrey;
   padding: 1em;
   grid-column: 3;
   grid-row: 1;
