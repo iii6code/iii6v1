@@ -60,35 +60,15 @@
             </div>
 
             <div id="salebox" class="list">
-              <label>Amount :</label>
-              <div id="ttokenamount">
-                <button id="down">-</button>
-                <input id="tco2_amnt" value="1" type="number" class="amountin" />
-                <button id="up">+</button>
-              </div>
-              <label>Project : </label>
-              <div id="project_location" class="list">
-                <select id="project">
-                  <option id="defaultOpt" value="0">-----</option>
-                  <!-- <option id="belize" value="belize">Belize - Maya Forest Corridor</option> -->
-                </select>
-                <label id="anilabel">Cause : </label>
-                <div id="defaultPro" class="animals">
-                  <button id="defaultAni" class="anichoice">null</button>
-                </div>
-              </div>
-              <label>Currency :</label>
-              <div id="cryptos">
-                <button id="xco2" class="link">xCO2</button>
-                <button id="usdc" class="link">USDC</button>
-                <button id="weth" class="link">WETH</button>
-                <button id="matic" class="link">MATIC</button>
-                <button id="eth" class="link">ETH</button>
-              </div>
-              <div id="checkout">
-                <button id="web2" class="link">WEB2 CHECKOUT</button>
-                <button id="web3" class="link">WEB3 CHECKOUT</button>
-              </div>
+              <h3>SET YOUR MEDIA DIR PATH</h1>
+              <h5>Enter your Online Media Directory Path</h5>
+              <input type="text" id="IPFS" placeholder="https://ipfs.io/ipfs/[YouRHaSHsTriNgGoeSHeRe]/dias" />
+              <h5 id="OR">or</h5>
+              <h5>Select a Local Media Directory</h5>
+              <input type="file" id="DIR" webkitdirectory directory multiple/>
+              <h3>INSERT YOUR DIA HERE</h1>
+              <textarea id="DIAS" placeholder="ADD YOUR DIA HERE ... "> </textarea>
+              <div id="BTN">TEST YOUR DIA NOW</div>
             </div>
           </div>
         </div>

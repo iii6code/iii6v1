@@ -406,6 +406,28 @@ option {
   padding: 1em;
   grid-column: 3;
   grid-row: 1;
+  text-align: center;
+}
+#IPFS,
+#DIR,
+#DIAS,
+#BTN,
+#OR {
+  width: 90%;
+  margin: 0;
+  padding: 0;
+}
+#BTN {
+  background: black;
+  color: white;
+  margin-left: 5%;
+  margin-top: 1em;
+  padding: 0.5em;
+  border-radius: 9px;
+}
+#DIAS {
+  height: 15em;
+  padding: 0.5em;
 }
 .animals {
   display: none;
