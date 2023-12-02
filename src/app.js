@@ -62,7 +62,7 @@ const loadToken = async (id) => {
     // console.log("Layer Digits : " + layer.content.digits);
     let path = layer.content.name == "aniname" ? layer.content.path + "/" + Math.floor(id[layer.content.digits[0]] / 2) + "/" + id[layer.content.digits[1]] : layer.content.name == "cover" ? layer.content.path + "/" + Math.floor(id[layer.content.digits[0]] / 2) + "/" + id[layer.content.digits[1]] : layer.content.name == "animal" ? layer.content.path + "/" + Math.floor(id[layer.content.digits[0]] / 2) : layer.content.name == "logo" ? layer.content.path + "/logo" : layer.content.name == "map" ? layer.content.path + "/belize/" + id[layer.content.digits[0]] : layer.content.path + "/" + id[layer.content.digits[0]];
     console.log(path, layer.content.digits);
-
+    console.log(newWidth, newHeight);
     pds.innerHTML += `<div id="l${layer.id}" class="layertemp">
     ${layer.content.type == "text" ? '<div id="txttemp" width=' + newWidth + " height=" + newHeight + '">"' + layer.content.path + '"</div>' : ""}
     ${layer.content.type == "image" ? '<img id="imgtemp" src="' + path + '.png" width=' + newWidth + " height=" + newHeight + ';"/>' : ""}
